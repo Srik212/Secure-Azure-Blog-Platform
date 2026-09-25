@@ -60,7 +60,16 @@ jobs:
         working-directory: ./apps/frontend
         run: npm ci
 
-
+      - name: Debug lockfiles
+        run: |
+          echo "Backend:"
+          ls -la ./apps/backend
+          echo "Frontend:"
+          ls -la ./apps/frontend
+      - name: Verify npm lockfiles
+        run: |
+          test -f ./apps/backend/package-lock.json && echo "Backend lockfile exists"
+          test -f ./apps/frontend/package-lock.json && echo "Frontend lockfile exists"
       # --------------------------------------------------
       # 4. Secret scanning
       # --------------------------------------------------
