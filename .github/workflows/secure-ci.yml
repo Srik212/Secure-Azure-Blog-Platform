@@ -76,11 +76,11 @@ jobs:
       # --------------------------------------------------
 
       - name: Backend dependency scan
-        working-directory: apps/backend
+        working-directory: ./apps/backend
         run: npm audit --audit-level=high
 
       - name: Frontend dependency scan
-        working-directory: apps/frontend
+        working-directory: ./apps/frontend
         run: npm audit --audit-level=high
 
 
