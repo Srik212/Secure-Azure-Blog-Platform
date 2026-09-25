@@ -53,11 +53,11 @@ jobs:
       # --------------------------------------------------
 
       - name: Install backend dependencies
-        working-directory: apps/backend
+        working-directory: ./apps/backend
         run: npm ci
 
       - name: Install frontend dependencies
-        working-directory: apps/frontend
+        working-directory: ./apps/frontend
         run: npm ci
 
 
