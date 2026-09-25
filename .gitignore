@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+apps/backend/node_modules/
+apps/frontend/node_modules/
+
+# Builds
+dist/
+apps/backend/dist/
+apps/frontend/dist/
+
+# Environment
+.env
+.env.*
+apps/backend/.env
+apps/frontend/.env
+
+# Database
+*.sqlite
+*.sqlite3
+data.sqlite
+
+# Logs
+*.log
+
+# OS/editor
+.DS_Store
+.vscode/
