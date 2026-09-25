@@ -31,6 +31,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Fetch complete Git history
+        run: |
+          git fetch --all --tags --prune
+          git log --oneline --all -10
+
 
       # --------------------------------------------------
       # 2. Node
